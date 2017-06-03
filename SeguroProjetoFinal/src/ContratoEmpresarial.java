@@ -3,9 +3,16 @@ public class ContratoEmpresarial extends Contrato {
 	int qntFuncionarios;
 	int qntVisitasDiaria;
 	int ramo; // 1 - comercio 2 - industria 3 - agropecuaria
+	float valorSinistro;
 	
 	
 	
+	public void calcularSeguroEmpresarial(CalcularSeguro empresarial){
+		valorSinistro = empresarial.totalFinal;
+		
+		
+		
+	}
 	
 	
 	

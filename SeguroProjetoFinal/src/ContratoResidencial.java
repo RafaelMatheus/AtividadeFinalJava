@@ -7,6 +7,20 @@ public class ContratoResidencial  {
 	int tipoResidencia; // guarda o tipo de residencia, 1- se casa, 2- se
 						// apartamento
 
+	float valorSinistro = 0.0f;
+	
+	
+	
+	public void calcularSeguroResidencial(CalcularSeguro residencial){
+		valorSinistro = residencial.totalFinal;
+		
+		
+	}
+
+	
+	
+	
+	
 	public String getEndereco() {
 		return endereco;
 	}

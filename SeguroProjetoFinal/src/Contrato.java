@@ -3,7 +3,9 @@ public class Contrato {
 	Cliente cliente;
 	float valorImovel;
 	int tipoContrato; // 1- residencial // 2- empresarial
-
+	
+	
+	
 	public Cliente getCliente() {
 		return cliente;
 	}

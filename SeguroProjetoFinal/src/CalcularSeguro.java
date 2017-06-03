@@ -1,7 +1,7 @@
 import java.io.IOError;
 
 public class CalcularSeguro {
-	private float totalFinal = 0.0f; 
+	public float totalFinal = 0.0f; 
 	
 	
 	/**
@@ -64,7 +64,9 @@ public class CalcularSeguro {
 				
 				
 				float totalRural = (float) (contrato.getValorImovel() * 0.05 );
-				this.totalFinal = (totalRural + total); // coloca o valor final do calculo dentro da variavel 
+				
+				this.totalFinal = (totalRural + total);
+				// coloca o valor final do calculo dentro da variavel 
 				//total final, no inicio do escopo da classe								
 			}
 			

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main {
@@ -6,7 +7,7 @@ public class main {
 	
 	/**
 	 * 
-	 * @param opcCliente 1- Para pessoa fisica 2 - para pessoa juridica
+	 * @param opcCliente 1 - Para pessoa fisica 2 - para pessoa juridica
 	 */
 	
 	
@@ -16,6 +17,7 @@ public class main {
 		Scanner leitor = new Scanner(System.in);
 		Menu menu = new Menu();
 		PessoaFisica fisica = new PessoaFisica();
+		ArrayList<PessoaFisica> pessoaFisica = new ArrayList<>();
 		PessoaJuridica juridica = new PessoaJuridica();
 		ContratoResidencial residencial = new ContratoResidencial();
 		ContratoEmpresarial empresarial = new ContratoEmpresarial();
@@ -53,6 +55,9 @@ public class main {
 					
 					System.out.print("Digite seu CPF: ");
 					fisica.cpf = leitor.nextLine();
+					
+					pessoaFisica.add(fisica);
+					
 		
 				}
 				
@@ -180,22 +185,30 @@ public class main {
 				
 				break;
 				
+				
+				
 			case 3:
 				
 				//listar cliente
 				break;
 				
+				
 			case 4:
 				// listar contrato
 				break;
 				
+				
 			case 5:
+				
 				//cadastrar sinistro
 				break;
+				
 				
 			case 6:
 				//listar sinistro
 				break;
+				
+				
 			case 7:
 				// listar contrato sem sinistro
 				break;
