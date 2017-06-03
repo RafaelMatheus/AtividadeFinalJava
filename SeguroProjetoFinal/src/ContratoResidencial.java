@@ -1,7 +1,9 @@
 
-public class ContratoResidencial extends Contrato {
+public class ContratoResidencial  {
+	Contrato contrato;
 	String endereco;
 	int zonaImovel; // 1 - Urbana 2 - Suburbana 3- rural
+	
 	int tipoResidencia; // guarda o tipo de residencia, 1- se casa, 2- se
 						// apartamento
 
